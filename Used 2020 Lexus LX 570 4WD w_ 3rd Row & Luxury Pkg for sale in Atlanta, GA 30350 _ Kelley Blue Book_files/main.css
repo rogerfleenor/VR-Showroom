@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+a, img {
+    border:none;
+    outline:none;
+    text-decoration: none;
+}
+body{
+	overflow:hidden;
+}
+p{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#main{	
+	width: 728px;
+	height: 90px;
+	overflow: hidden;
+	background-color: #fff;
+	cursor:pointer;
+}
+#dealerName{
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    
+    float: left;
+    padding: 0 5px 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+#dealerAdress{
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 65px;
+    
+    padding: 0 5px 0;
+    color: white;
+    white-space: nowrap;
+    text-align: left;
+}
+#logoImg{
+    position: absolute;
+    width: 80px;
+    height: 45px;
+    top: 14px;
+    left: 105px;
+}
+
+.animationDuration1 {
+    -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
+}
+.animationDuration2 {
+    -webkit-animation-duration: .5s; 
+    animation-duration: .5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
+} 
+.delay1{
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.delay2{
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+@-webkit-keyframes tween1 { 
+    0% { opacity: 0; } 
+    100% { opacity: 1; } 
+} 
+@keyframes tween1 { 
+    0% { opacity: 0; } 
+    100% { opacity: 1; } 
+} 
+.tween1 { 
+    -webkit-animation-name: tween1; 
+    animation-name: tween1; 
+}
